@@ -183,6 +183,39 @@
     margin:14px auto 0;
   }
 
+  /* ===== CHỨNG CHỈ ===== */
+  .certs{
+    background:var(--light);
+  }
+  .certs-grid{
+    position:relative;z-index:2;
+    max-width:900px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+  }
+  .cert-card{
+    background:var(--white);
+    border:1px solid #e2e4e8;
+    border-radius:6px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,0.06);
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .cert-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 22px rgba(0,0,0,0.1);
+  }
+  .cert-card img{
+    width:100%;
+    display:block;
+    border-bottom:3px solid var(--orange);
+  }
+  .cert-info{padding:16px 18px;}
+  .cert-info h3{font-size:15.5px;color:#1a1d22;margin-bottom:4px;font-weight:700;line-height:1.35;}
+  .cert-info p{font-size:13px;color:#667;}
+
   /* ===== GIỚI THIỆU ===== */
   .about{
     background:var(--white);
@@ -450,6 +483,32 @@
     <div class="scroll-hint">Cuộn xuống<span></span></div>
   </div>
 </header>
+
+<!-- CHỨNG CHỈ ĐÀO TẠO -->
+<section class="certs">
+  <div class="blueprint-bg light"></div>
+  <div class="section-head reveal">
+    <div class="section-tag">Chứng chỉ đào tạo</div>
+    <h2>Được công nhận chuyên môn</h2>
+    <div class="underline"></div>
+  </div>
+  <div class="certs-grid reveal">
+    <div class="cert-card">
+      <img src="../assets/chung-chi-cpo.jpg" alt="Chứng chỉ CPO - Giám đốc sản xuất chuyên nghiệp">
+      <div class="cert-info">
+        <h3>CPO — Giám đốc sản xuất chuyên nghiệp</h3>
+        <p>Trường Đào tạo Doanh nhân PTI · 17/12/2017</p>
+      </div>
+    </div>
+    <div class="cert-card">
+      <img src="../assets/chung-chi-mmm.jpg" alt="Chứng chỉ MMM - Năng lực quản trị cho quản lý cấp trung">
+      <div class="cert-info">
+        <h3>MMM — Năng lực quản trị cho quản lý cấp trung</h3>
+        <p>PTI Education Training Group · 11/08/2026</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- GIỚI THIỆU -->
 <section class="about">
